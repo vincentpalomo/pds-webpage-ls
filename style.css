@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+.main-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 32px;
+  margin-left: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+  gap: 20px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 24px;
+}
+
+.nav-items {
+  text-decoration: none;
+}
+
+.nav-items:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  height: 100%;
+  width: 100%;
+  margin-top: 30vh;
+  padding-left: 40px;
+  position: relative;
+}
+
+.content-subtitle {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  z-index: 1;
+  color: white;
+  width: 55%;
+}
+
+.content-title {
+  z-index: 1;
+}
+
+.content-title-image {
+  width: 98.5%;
+  padding-bottom: 100px;
+}
+
+.content-subtitle-button {
+  margin-top: 20px;
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.content-subtitle-button:hover {
+  background: #000000;
+  color: white;
+}
+
+.about-section {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-section-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 60px;
+  z-index: 1;
+  color: white;
+  width: 50%;
+}
+
+.about-content {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  z-index: 1;
+  color: black;
+  width: 50%;
+  padding-left: 20px;
+}
+
+.about-section-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 20px;
+}
+
+.about-section-image {
+  width: 45%;
+  height: auto;
+}
+
+.image-split-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.image-split-section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services-section {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.services-section-content {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  z-index: 1;
+  color: white;
+  width: 50%;
+  padding-left: 20px;
+}
+
+.services-section-video {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.services-section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-section {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.contact-section-content {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  z-index: 1;
+  color: black;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.contact-section-links {
+  padding-top: 20px;
+}
+
+.contact-section-text {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  z-index: 1;
+  color: black;
+  width: 55%;
+  padding-left: 20px;
+}
+
+.contact-section-link {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  z-index: 1;
+  color: black;
+  padding-left: 20px;
+}
+
+.contact-section-image-container {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-section-image {
+  width: 98%;
+  height: 100%;
+}
+
+#contact-section-title {
+  padding-top: 20vh;
+  padding-left: 40px;
+  padding-right: 20px;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "sw005-ls",
+  "version": "1.0.0",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "rm -rf dist && parcel build index.html",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "parcel": "^2.13.2"
+  },
+  "devDependencies": {
+    "svgo": "^3.3.2"
+  }
+}

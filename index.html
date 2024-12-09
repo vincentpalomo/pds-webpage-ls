@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Peripheral</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <video autoplay loop muted class="background-video">
+    <source src="media/1.mp4" type="video/mp4" />
+  </video>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="logo">Peripheral</div>
+    <div class="navlinks">
+      <div class="nav-items">about</div>
+      <div class="nav-items">services</div>
+      <div class="nav-items">contact</div>
+    </div>
+  </nav>
+  <!-- main section -->
+  <div class="main-container">
+    <div class="content">
+      <div class="content-subtitle-container">
+        <div class="content-subtitle">A new way to experience the world. An award-winning drone agency based in Atlanta,
+          GA. See the world through our lens.
+        </div>
+        <button class="content-subtitle-button">Learn More</button>
+      </div>
+      <div class="content-title">
+        <img src="media/PERIPHERAL.svg" alt="Peripheral" class="content-title-image" />
+      </div>
+    </div>
+  </div>
+  <!-- about section -->
+  <div class="about-section" id="about-section">
+    <div class="about-content">
+      <p>Peripheral is an award-winning drone agency based in Atlanta, GA. We specialize in aerial photography and
+        videography, and we're dedicated to providing our clients with the highest quality service possible.</p>
+      <p>We're a team of experienced drone pilots and photographers who are passionate about capturing the beauty of the
+        world from above.</p>
+    </div>
+    <div class="about-section-image-container">
+      <img src="media/3.jpg" alt="Peripheral" class="about-section-image" />
+      <img src="media/4.jpg" alt="Peripheral" class="about-section-image" />
+    </div>
+  </div>
+  <!-- image split section -->
+  <div class="image-split-section">
+    <img src="media/1.jpg" alt="Peripheral" class="image-split-section-image" />
+  </div>
+  <!-- services section -->
+  <div class="services-section" id="services-section">
+    <div class="services-section-video">
+      <video src="media/2.mp4" class="services-section-image" autoplay loop muted></video>
+    </div>
+    <div class="services-section-content">
+      <p>We offer a wide range of services, including aerial photography and videography, aerial inspections, and aerial
+        marketing.</p>
+      <p>Aerial photography and videography is a powerful way to capture the beauty of the world from above. Our team of
+        experienced drone pilots and photographers are dedicated to providing our clients with the highest quality
+        service possible.</p>
+    </div>
+  </div>
+
+  <!-- contact section -->
+  <div class="contact-section" id="contact-section">
+    <div class="content-title" id="contact-section-title">
+      <img src="media/PERIPHERAL-black.svg" alt="Peripheral" class="content-title-image" />
+    </div>
+    <div class="contact-section-content">
+      <p class="contact-section-text">Contact us today to learn more about our services and how we can help you capture
+        the beauty of the world from above.</p>
+      <div class="contact-section-links">
+        <div class="contact-section-link">404.404.4044</div>
+        <div class="contact-section-link">hello@peripheral.com</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
