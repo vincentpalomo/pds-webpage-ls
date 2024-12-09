@@ -44,7 +44,7 @@ body {
 }
 
 .logo {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 32px;
   margin-left: 40px;
   text-transform: uppercase;
@@ -57,7 +57,7 @@ body {
   align-items: center;
   margin-right: 40px;
   gap: 20px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 24px;
 }
 
@@ -85,7 +85,7 @@ body {
 }
 
 .content-subtitle {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 60px;
   font-weight: 500;
   z-index: 1;
@@ -109,7 +109,7 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 24px;
   cursor: pointer;
   text-align: left;
@@ -131,7 +131,7 @@ body {
 }
 
 .about-section-title {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 60px;
   z-index: 1;
   color: white;
@@ -139,7 +139,7 @@ body {
 }
 
 .about-content {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 40px;
   z-index: 1;
   color: black;
@@ -188,7 +188,7 @@ body {
 }
 
 .services-section-content {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 40px;
   z-index: 1;
   color: white;
@@ -215,7 +215,7 @@ body {
 }
 
 .contact-section-content {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 40px;
   z-index: 1;
   color: black;
@@ -228,7 +228,7 @@ body {
 }
 
 .contact-section-text {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 40px;
   font-weight: 500;
   z-index: 1;
@@ -238,7 +238,7 @@ body {
 }
 
 .contact-section-link {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 24px;
   font-weight: 400;
   z-index: 1;
@@ -260,4 +260,35 @@ body {
   padding-top: 20vh;
   padding-left: 40px;
   padding-right: 20px;
+}
+
+@media screen and (min-width: 1400px) {
+  .content {
+    margin-top: 20vh;
+  }
+
+  .content-subtitle {
+    font-size: 40px;
+    width: 45%;
+  }
+
+  .about-content {
+    font-size: 32px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .services-section-content {
+    font-size: 32px;
+  }
+
+  .content-title-image {
+    padding-bottom: 60px;
+  }
+
+  .contact-section-text {
+    font-size: 32px;
+  }
 }
