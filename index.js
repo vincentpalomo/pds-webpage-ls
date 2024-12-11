@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Close mobile menu
   closeBtn.addEventListener('click', () => {
     gsap.to(mobileNav, {
-      duration: 0.5,
+      duration: 0.2,
       y: '-100%',
       ease: 'power2.in',
       onComplete: () => {
@@ -118,21 +118,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Mobile nav items click handlers
   mobileNavItems.forEach((item, index) => {
     item.addEventListener('click', () => {
-      const sections = ['#main-section',"#about-section", "#services-section", "#contact-section"];
+      const sections = ['#main-section', "#about-section", "#services-section", "#contact-section"];
+      
+      // // Close menu immediately
+      mobileNav.style.display = 'none';
+      mobileNav.style.transform = 'translateY(-100%)';
+      
+      // Then handle the scrolling
       gsap.to(window, { 
-        duration: 1, 
-        scrollTo: { y: sections[index] },
-        onComplete: () => {
-          // Close menu after navigation
-          gsap.to(mobileNav, {
-            duration: 0.5,
-            y: '-100%',
-            ease: 'power2.in',
-            onComplete: () => {
-              mobileNav.style.display = 'none';
-            }
-          });
-        }
+        duration: 0.2, 
+        scrollTo: { y: sections[index] }
       });
     });
   });
