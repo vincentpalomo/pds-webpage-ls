@@ -274,8 +274,12 @@ body {
   }
 
   .content-subtitle {
-    font-size: 20px;
+    font-size: 32px;
     width: 100%;
+  }
+
+  p {
+    margin-bottom: 10px;
   }
 
   .content-subtitle-button {
@@ -295,6 +299,11 @@ body {
     justify-content: center;
   }
 
+  .about-section-image {
+    width: 42%;
+    margin-top: 20px;
+  }
+
   .about-section-image-container {
     width: 100%;
   }
@@ -302,11 +311,14 @@ body {
   .services-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .services-section-video {
     width: 100%;
     height: 30%;
+    margin-top: 20vh;
   }
 
   .services-section-content {
@@ -329,6 +341,29 @@ body {
 
   .contact-section-link {
     padding-left: 0;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  .mobile-nav {
+    display: none;
+    z-index: 2;
+  }
+
+  .logo {
+    margin-left: 20px;
   }
 }
 
@@ -366,4 +401,58 @@ body {
   .contact-section-text {
     font-size: 32px;
   }
+}
+
+/* Add this to your existing CSS */
+.navbar.hidden {
+  display: none;
+  /* Hide the navbar */
+}
+
+/* Add these new styles */
+.hamburger {
+  cursor: pointer;
+  margin-right: 20px;
+  z-index: 3;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 2px;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: 10;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+}
+
+.mobile-nav-items {
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 32px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
 }
