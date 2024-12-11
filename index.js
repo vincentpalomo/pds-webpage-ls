@@ -136,4 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  document.getElementById('content-subtitle-button').addEventListener('click', function() {
+    gsap.to(window, { duration: 1, scrollTo: { y: "#about-section" } });
+  });
 });

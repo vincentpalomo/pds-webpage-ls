@@ -426,7 +426,7 @@ body {
 /* 1440px screens */
 @media screen and (min-width: 1400px) {
   .content {
-    margin-top: 20vh;
+    margin-top: 25vh;
   }
 
   .content-subtitle {
@@ -456,5 +456,28 @@ body {
 
   .contact-section-text {
     font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .content-subtitle {
+    font-size: 60px;
+    width: 40%;
+  }
+
+  .about-content {
+    font-size: 48px;
+  }
+
+  .services-section-content {
+    font-size: 48px;
+  }
+
+  .contact-section-text {
+    font-size: 60px;
+  }
+
+  #contact-section-title {
+    padding-top: 25vh;
   }
 }
