@@ -120,13 +120,22 @@ document.addEventListener("DOMContentLoaded", () => {
     item.addEventListener('click', () => {
       const sections = ['#main-section', "#about-section", "#services-section", "#contact-section"];
       
-      // // Close menu immediately
-      mobileNav.style.display = 'none';
-      mobileNav.style.transform = 'translateY(-100%)';
+      // // // Close menu immediately
+      // mobileNav.style.display = 'none';
+      // mobileNav.style.transform = 'translateY(-100%)';
+
+      gsap.to(mobileNav, {
+        duration: 0.5,
+        y: '-100%',
+        ease: 'power2.in',
+        onComplete: () => {
+          mobileNav.style.display = 'none';
+        }
+      });
       
       // Then handle the scrolling
       gsap.to(window, { 
-        duration: 0.2, 
+        duration: 0.5, 
         scrollTo: { y: sections[index] }
       });
     });
