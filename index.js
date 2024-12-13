@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Create a ScrollTrigger instance for the about section
   ScrollTrigger.create({
     trigger: ".about-section",
-    start: "top 10%",
+    start: "top 5%",
     onEnter: () => {
       console.log("Entered about section");
       gsap.to(".nav-items", { color: "black", duration: 0.2 });
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Create a ScrollTrigger instance for the contact section
   ScrollTrigger.create({
     trigger: ".contact-section",
-    start: "top 10%",
+    start: "top 5%",
     onEnter: () => {
       console.log("Entered contact section");
       gsap.to(".nav-items", { color: "black", duration: 0.2 });
